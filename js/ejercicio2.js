@@ -12,16 +12,24 @@ while (ciudad !== null) {
 
 console.log(ciudades.length);
 
-document.write(`<ul>
+document.write(`<p> El arreglo de ciudades tiene ${
+  ciudades.length
+} ciudades </p>
+  <ul>
     <li> La ciudad en la primera posicion es: ${ciudades[0]} </li>
     <li> La ciudad en la tercera posicion es: ${ciudades[2]} </li>
     <li> La ciudad en la ultima posicion es: ${ciudades[ciudades.length - 1]}
-    </ul>`);
+  </ul>`);
 
 ciudades.push("Paris");
+document.write(`<ul>
+  <li> La ciudad en la ultima posicion es: ${ciudades[ciudades.length - 1]}</li>
+  </ul>`);
 
-console.log(ciudades[1]);
-
-ciudades[1] = 'Barcelona';
-
-console.log(ciudades);
+ciudades[1] = "Barcelona";
+document.write(`<h3> Arreglo de ciudades </h3>`);
+document.write(`<ul>`);
+for (let i = 0; i < ciudades.length; i++) {
+  document.write(`<li> Elemento: ${ciudades[i]} </li>`);
+}
+document.write(`</ul>`);

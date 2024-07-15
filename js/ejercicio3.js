@@ -1,4 +1,4 @@
-let apariciones = Array(13).fill(0);
+const apariciones = Array(13).fill(0);
 
 for (let i = 0; i <= 50; i++) {
   let dado1 = Math.floor(Math.random() * 6) + 1;
